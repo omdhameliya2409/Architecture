@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="contaniner">
+        <form autocomplete="off" method="post" name="google-sheet">
+            <h3>login Here</h3>
+            <input type="text" placeholder="Type Your Name Here" name="name" required>
+            <input type="email" placeholder="Type Your Email Here" name="email" required>
+            <input type="text" placeholder="Type Your Mobile Number Here" name="mobile" required>
+
+            <button type="submit" name="submit">Submit </button>
+            <button type="reset" class="reset">Reset</button>
+        </form>
+    </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzezmguWm0CujrwGwG0QN8XwMe658vREyrXlVzHFLjy2EJLk0G-fkglwxvmtpx6DLWI/exec'
+        const form = document.forms['google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    // alert("Thanks for Contacting us..! We Will Contact You Soon...");
+                    window.location.href = "index.html"; 
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+   
+
+</body>
+
+</html>

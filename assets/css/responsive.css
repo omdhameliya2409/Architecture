@@ -1,0 +1,153 @@
+/* max-width: 320 sm mobail screen
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV. */
+
+@media screen and (min-width:1201px) {}
+
+
+@media screen and (min-width:1025px) and (max-width:1200px) {}
+
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .img_tr h6 {
+        font-size: 24px;
+    }
+
+    .img_tr p {
+        padding: 0px 0;
+        font-size: 13px;
+    }
+
+    .contact {
+        margin: 21px;
+    }
+
+    .years h4 {
+        padding: 0px 2px;
+    }
+}
+
+@media screen and (min-width:821px) and (max-width:912px) {}
+
+@media screen and (min-width:769px) and (max-width:820px) {}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .contact {
+        margin: 0px;
+        padding: 1px;
+    }
+
+    .contact {
+        margin: 0px;
+    }
+
+    .title1 {
+        font-size: 2.5rem;
+    }
+
+    .bg_contact {
+        padding: 19px;
+    }
+
+    .about_heading1 {
+        left: 40px;
+    }
+
+    .a_latter {
+        width: 220px;
+        left: 37px;
+    }
+
+
+    .about_us {
+        background-size: cover;
+        padding: 51px;
+    }
+
+    .years h4 {
+        padding: 0px 3px;
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+    .about_heading h1 {
+        font-size: 3rem;
+    }
+    .a_latter {
+        display: none;
+    }
+    .about_heading1 {
+        display: none;
+    }
+    .years {
+        padding: 0;
+    }
+    .about_us::before {
+        height: 432px;
+    }
+    .years::before {
+        left: -11px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .top_text h1 {
+        font-size: 35px;
+    }
+
+    .clientt {
+        font-size: 45px;
+    }
+    .title1 {
+        font-size: 27px;
+    }
+
+    .contact {
+        margin: 40px;
+    }
+
+    .a_latter {
+        display: none;
+    }
+
+    .about_heading1 {
+        display: none;
+    }
+
+    .about_us {
+        padding: 51px;
+    }
+
+    .a_latter {
+        height: 408px;
+    }
+
+    .container1 h2 {
+        font-size: 35px;
+    }
+
+    .about_heading h1 {
+        font-size: 2rem;
+    }
+
+    .ex_text {
+        font-size: 0.8rem;
+    }
+
+    .ex_text span {
+        font-size: 3rem;
+    }
+    .bg_contact {
+        padding: 0px;
+    }
+    
+    .contact {
+        margin: 0px;
+    }
+
+}
